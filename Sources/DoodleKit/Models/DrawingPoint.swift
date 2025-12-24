@@ -12,7 +12,7 @@ public struct DrawingPoint: Codable, Equatable {
     public let location: CGPoint
     public let timestamp: TimeInterval
     public let pressure: CGFloat
-    public let isEtimated: Bool
+    public let isEstimated: Bool
     
     public init(
         location: CGPoint,
@@ -23,7 +23,7 @@ public struct DrawingPoint: Codable, Equatable {
         self.location = location
         self.timestamp = timestamp
         self.pressure = pressure
-        self.isEtimated = isEstimated
+        self.isEstimated = isEstimated
     }
     
     /** Using Pythagoras Theorem to calculate distance betwen two points */
